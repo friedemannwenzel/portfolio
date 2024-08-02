@@ -135,13 +135,19 @@ body{
 
 /* Step 3: Devices smaller than 768px */
 @media (max-width: 768px) {
+
+    .sec-1{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
     .sec-1-h1 {
         font-size: 60px;
         margin-bottom: 75px;
     }
 
     .sec-1-span-1 {
-        font-size: 35px;
+        font-size: 45px;
     }
 
     .sec-1-p {
@@ -152,8 +158,9 @@ body{
 /* Step 4: Devices smaller than 525px */
 @media (max-width: 525px) {
     .sec-1-h1 {
-        font-size: 45px;
+        font-size: 55px;
         line-height: 98%;
+        margin-bottom: 80px;
     }
 
     .sec-1-span-1 {
@@ -854,6 +861,7 @@ body{
 .aboutmebody {
     font-family: 'Inter', sans-serif;
     margin: 0;
+    background-color: #FFFFFF;
 }
 
 .aboutme-sec-1 {
