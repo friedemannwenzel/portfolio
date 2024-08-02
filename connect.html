@@ -31,16 +31,16 @@
         <div class="connect-sec-1-container">
             <div class="connect-sec-1-div-1">
                 <h1 class="connect-sec-1-h1">Connect</h1>
-                <p class="connect-sec-1-p">I’m always open to new projects and collaborations. If you have a project in mind or just want to say hi, feel free to send me a message.</p>
+                <p class="connect-sec-1-p">I’m always open to new projects and collaborations. If you have a project in mind or just want to connect, feel free to send me a message.</p>
             </div>
             <div class="connect-sec-1-grid">
                 <div class="connect-sec-1-grid-item">
                     <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/gmail.svg" alt="Email" class="connect-sec-1-grid-img"> 
                     <h2 class="connect-sec-1-h2">&nbsp;&nbsp;Email</h2>
                 </div>
-                <a href="mailto:business@friedemannwenzel.com" class="sec-3-grid-link">
+                <a href="#" class="sec-3-grid-link" id="email-link" style="display:none;">
                     <div class="connect-sec-1-grid-item">
-                        <h2 class="connect-sec-1-h2">business@friedemannwenzel.com&nbsp;</h2>
+                        <h2 class="connect-sec-1-h2" id="email-text"></h2>
                         <span class="material-symbols-outlined">north_east</span>
                     </div>
                 </a>
@@ -70,5 +70,19 @@
     <section class="copyright-2">
         <p class="copyright-2">© friedemannwenzel.com</p>
     </section>
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function() {
+            const parts = ['b', 'u', 's', 'i', 'n', 'e', 's', 's', '@', 'f', 'r', 'i', 'e', 'd', 'e', 'm', 'a', 'n', 'n', 'w', 'e', 'n', 'z', 'e', 'l', '.', 'c', 'o', 'm'];
+           
+            const emailAddress = parts.join('');
+
+            const emailLink = document.getElementById("email-link");
+            emailLink.setAttribute("href", "mailto:" + emailAddress);
+
+            document.getElementById("email-text").textContent = emailAddress;
+
+            emailLink.style.display = 'block';
+        });
+    </script>
 </body>
 </html>
