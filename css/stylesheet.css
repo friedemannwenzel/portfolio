@@ -633,9 +633,9 @@ body{
 @media (max-width: 525px) {
 
     .sec-4-grid {
-        grid-template-columns: 1fr;
         max-width: 400px;
         margin: auto;
+        gap: 10px;
     }
 
     .sec-4-grid-item{
@@ -647,7 +647,7 @@ body{
     }
 
     .sec-4-h1 {
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .sec-4-grid-h2 {
@@ -655,7 +655,11 @@ body{
     }
 
     .sec-4-grid-img {
-        max-width: 75px;
+        max-width: 120px;
+    }
+
+    .sec-4{
+        height: 80vh;
     }
 }
 
